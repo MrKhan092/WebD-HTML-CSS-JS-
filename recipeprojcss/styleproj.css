@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navitems{
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+}
+.navtag{
+    width: 100vw;
+    height: 70px;
+    background-color:#000000;
+    background-image:linear-gradient(160deg,#000000 0%,#8085d0 100%);
+
+}
+#p1{
+    font-size: 30px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+#anchor{
+    color: beige;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color: beige;
+}
+#pf{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.content{
+    background-color: aliceblue;
+    margin: auto;
+    width: 70%;
+    /* border: 2px solid black; */
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
+}
+.rightbox img{
+    height: 300px;
+    width: 250px;
+    border-radius: 20px;
+}
+.rightbox :hover{
+    transform: scale(1.1);
+}
+.items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftbox h2{
+    font-size: 2rem;
+}
+.rightbox{
+    position: relative;
+    overflow: auto;
+}
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(36, 34, 34, 0.713);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    
+}
+.rightbox .overlay:hover{
+    opacity: 1;
+    transition: all 0.3s linear 0s;
+}
+.rightbox .overlay span{
+    color: azure;
+}
+#foot{
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    background-color:#000000;
+    background-image:linear-gradient(160deg,#000000 0%,#8085d0 100%);
+}

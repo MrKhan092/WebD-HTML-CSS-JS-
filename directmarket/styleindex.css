@@ -1,0 +1,440 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+   font-family: 'Merriweather', serif;
+
+    /* font-family: "Inter", serif; */
+    
+}
+
+:root{
+    --primary-color:#6366F1;
+    --accent-color:#3f83f8;
+    --text-color:#333333;
+    --link-color:#2563eb;
+    --background-color:#ffffff;
+    --light-gray:#f0f0f0;
+    --gray:#808080;
+    --dark-gray:#555;
+}
+body{
+    
+    height: 100vh;
+    padding: 0.2rem;
+    text-align: center;
+    background-color: var(--background-color);
+
+}
+.header{
+    margin: 0 auto;
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    gap: .8rem;
+}
+.logo-icon{
+    height: 6rem;
+    width: 6rem ;
+    border: solid black 1px;
+    border-radius: 50px;
+   
+}
+.logotext{
+    font-size: 2rem;
+}
+.nav{
+    display: flex;
+    gap: 1.5rem;
+}
+@media (max-width:768px) {
+    .nav{
+        display:none;
+    }
+}
+.navtab{
+    color: #718096;
+    font-size: 1,125rem;
+    font-weight: 600;
+
+}
+.navtab:hover{
+    color: var(--link-color);
+}
+.Contact{
+    /* border-radius: 0.375rem;
+    background-color: var(--primary-color);
+    color: var(--background-color); */
+    padding: 0.5rem 1rem ;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+@media (max-width:768px){
+    .Signin{
+        display: none;
+    }
+}
+.menu-button{
+    margin :20px;
+    border: none;
+    border-radius: 5px;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color:var(--background-color) ;
+} 
+@media screen  and (min-width:768px){
+    .menu-button{
+        display: none;
+    }
+}
+.contact:hover{
+    background-color: #5254f8 ;
+}
+.content{
+    width: 100%;
+    background-image: linear-gradient(282deg, rgba(174, 213, 121, 0), rgba(99, 144, 56, 0.8)), url(/assets/backgrounds/casca-arroz-443a6b6….jpg);
+}
+.container{
+    padding: .6rem;
+    display: flex;
+    gap: 2rem;
+    max-width: 1280px;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+}
+/* @media screen and (max-width:768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+    
+} */
+.leftbox{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    animation: slidefromleft 1s ease forwards;
+    opacity: 0;
+}
+@keyframes slidefromleft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.p1{
+    color: var(--primary-color);
+    font-weight: 800;
+}
+.head{
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+.p2{
+    font-size: 1rem;
+    color: var(--background-color);
+}
+.buttongroup{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.b1{
+    border: none;
+    padding: .5rem 1.3rem;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+    background-color: var(--primary-color);
+    color: var(--background-color)
+}
+.b2{
+    border: none;
+    padding: .5rem 1.3rem;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+    background-color: var(--dark-gray);
+    color: var(--background-color)
+}
+.rightbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-cont{
+    border-radius: 1.25rem;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    height: 50vh;
+    
+   
+    
+}
+.img{
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    
+    
+}
+@media screen and (min-width:768px)  {
+     .container{
+        flex-direction: row;
+        gap: 4rem;
+     }
+     .leftbox{
+        flex-direction: column;
+        align-items: start;
+        width: 50%;
+        text-align: start;
+        gap: 1.4rem;
+     }
+     .p2{
+        max-width: 85%;
+    }
+    .head{
+        font-size: 3.8rem;
+    }
+    .img-cont{
+        height: 65vh;
+    }
+
+}
+.benefits-sec{
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+.benefits-section{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap :1rem;
+}
+.unordered{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+
+.unordered {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove any left padding */
+}
+
+.unordered li {
+    position: relative; /* To position the check mark */
+    padding-left: 25px; /* Add space for the check mark */
+}
+
+.unordered li::before {
+    content: "\2713"; /* Unicode character for a check mark (✓) */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem; /* Adjust the size as needed */
+    color: rgb(65, 121, 65); /* Set the color of the check mark */
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;           /* Ensures full width */
+    height: 100%;          /* Ensures full height */
+    position: relative;
+    overflow: hidden;      /* Ensures no overflow if aspect ratio doesn't match */
+}
+
+.video {
+    width: 100%;           /* Video takes full width */
+    height: 100%;          /* Video takes full height */
+    object-fit: cover;     /* Ensures the video maintains its aspect ratio and covers the area */
+    position: absolute;    /* Position it absolutely within the container */
+}
+
+.footer{
+    background-color: #B1BBAD;
+    padding: 4rem;
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+   
+}
+.topfoot{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    gap: 4rem;
+    
+}
+.leftfooter{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+}
+.companylogo{
+    display: flex;
+    gap: 5rem;
+    font-weight: bold;
+}
+.anchor-foot{
+    display: flex;
+    gap: 1rem;
+}
+.foot-logo-text{
+    color: var(--text-color);
+    font-size: 25px;
+}
+.logosvg{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 5rem;
+}
+.social{
+    display: flex;
+    gap: 1rem;
+}
+.social-icon{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.filler-text{
+    color: var(--gray);
+}
+.rightfooter{
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ gap: 5rem;
+}
+.footer-grid-column{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer-grid-title{
+    color: var(--text-color);
+    font-weight: bolder;
+}
+.footer-grid-list{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem;
+}
+.footer-list{
+    color: rgba(0, 0, 0, 0.417);
+}
+.foot-down{
+    border-top: 1px solid var(--light-gray);
+    margin-top: 2rem;
+    padding: 1rem;
+    color: var(--gray);
+}
+@media screen and (max-width:1080px) {
+    .topfoot{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:640px){
+    .rightfooter{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+        max-width: 640px;
+    }
+    .foot-down{
+        text-align: left;
+    }
+}
+.features-container{
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+
+}
+.f-content{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.f-top{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.f-head{
+    font-size: 50px;
+}
+.f-head2{
+    font-size: 50px;
+    color: #28a745;
+}
+.f-top1{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.f-down{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    
+}
+.f-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+#f-grid{
+    border-right: 1px black solid;
+}
+.f-gcontent{
+    font-size: 20px;
+}
+.f-gpara{
+    max-width: 150px;
+    color: var(--gray);
+}
+.fimage{
+    background-color:#28a745;
+    height: 80px;
+    border-radius: 40px;
+    width: 80px;
+}

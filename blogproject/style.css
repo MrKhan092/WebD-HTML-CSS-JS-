@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 75vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+.header{
+    margin-bottom: 2.8rem;
+}
+#heading{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+#headpara{
+    max-width: 568px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.583);
+    margin: auto;
+}
+.main{
+    display: grid;
+    /* grid-template-columns: repeat(4,1fr); */
+    grid-template-columns: repeat(auto-fit,minmax(350px,500px));
+    gap: 1.5rem;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(111, 109, 109);
+    border-radius: 5px;
+    height: 350px;
+}
+.card_image{
+    position: relative;
+    overflow: hidden;
+    height: 10rem;
+}
+.cardimg{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.cardcontent{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;  
+}
+.card:hover .cardimg{
+    transform: scale(1.2);
+    transition-duration: 200ms;
+}
+#cardtitle{
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(25,23,23);
+    margin-bottom: 0.3rem;
+}
+.cardanchor:hover #cardtitle{
+    color: blue;
+}
+#cardpara{
+    color: rgb(113,107,107);
+    font-size: 1rem;
+}
+.cardfoot{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem;
+}
+#leftcontent{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.avatar{
+    height: 2.5rem;
+    width: 2.5rem;
+    border: solid black 1px;
+    border-radius: 50%;
+}
+.avaimg{
+    height: 100%;
+    width: 100%;
+}
+.avatarcontent{
+    display: flex;
+    flex-direction: column;
+}
+.authorname{
+    color: rgb(100, 100, 218);
+}
+#rightcontent{
+    font-size: 1rem;
+    border: 1px solid rgb(76,71,71);
+    padding: 0.25rem 0.5rem ;
+    border-radius: 2px;
+    color: gray;
+}

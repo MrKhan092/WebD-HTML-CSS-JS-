@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            /* creating custom variables that can be used again and again using var  */
+            --custom-width:500px;
+        }
+        .container{
+            background-color: beige;
+            border: black,solid,1px;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            border: 1px , black ,solid;
+            background-color: aquamarine;
+            width: var(--custom-width);
+            height: 500px;
+            margin: 5px;
+            padding: 5px;
+            /* box-shadow: xoffset yoffset blur-radius spread-radius ,color */
+            box-shadow: 10px 10px 5px 20px black;
+            /* box-shadow: inset 10px 10px brown; */
+        }
+        #head1{
+            /* text-shadow: xoffset yofffset blur-radius color */
+            text-shadow: 10px 12px 1px white;
+            /* text-shadow: 10px 10px; by default nocolor mentioned so black shadow by default*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="logo CU.jpeg" alt="image">
+            <h2 id="head1">Welcome to Chandigarh University</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed laborum delectus fugit voluptates? Dolorum molestiae unde blanditiis, id aliquam vitae quaerat magnam? Asperiores explicabo fugit eos corporis? Ad reprehenderit et sit corrupti rerum. Iusto, saepe. Deleniti suscipit quod libero atque cupiditate accusantium harum, vel, qui laborum similique reprehenderit nemo pariatur!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

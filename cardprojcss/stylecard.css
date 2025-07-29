@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    /* min-height: 900px; */
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box{
+    padding: 20px;
+    height: 500px;
+    width: 360px;
+    background-color: azure;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.box img{
+   width: 70%;
+}
+.box p{
+    font-size: 10px;
+}

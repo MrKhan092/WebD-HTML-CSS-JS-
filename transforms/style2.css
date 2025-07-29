@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    background-color: bisque;
+    padding: 5rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+}
+.items{
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    background-color: rgb(80, 147, 125);
+}
+#rotatex:hover{
+    transform: rotateX(45deg);
+}
+#rotatey:hover{
+    transform: rotateY(45deg);
+}
+#rotatez:hover{
+    transform: rotateZ(45deg);
+}
+#scalex:hover{
+    transform: scaleX(1.5);
+}
+#scaley:hover{
+    transform: scaleY(1.5);
+}
+#scalez:hover{
+    transform: perspective(300px) scaleZ(5) rotateY(30deg) ;
+}
+#translatex:hover{
+    transform: translateX(100px);
+}
+#translatey:hover{
+    transform: translateY(-100px);
+}
+#translatez:hover{
+    transform: perspective(300px) translateZ(100px);
+}
+
